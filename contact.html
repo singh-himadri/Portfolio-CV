@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style media="screen">
@@ -128,17 +129,6 @@
     </ul>
   </nav>
   <br/><br/><br/>
-  <!-- <div class="contents">
-  <a href="https://www.linkedin.com/in/himadri-singh2256/">
-  <button style="text-align: center;"> LINKEDIN 
-  </button> <br/></a>
-  <a href="https://github.com/jai2256">
-  <button1 style="text-align: center;"> GitHub
-  </button1><br/> </a>
-  <a href="https://www.instagram.com/ofpaintsandpalettes/">
-  <button2 style="text-align: center;"> Instagram
-  </button2>  <br/></a>
-    </div> -->
     <footer>
         <div class="footer-content">
             <ul class="socials">
@@ -151,8 +141,39 @@
     </footer>
   <br/>
   <br/>
-  <div style="padding-left: 600px;">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfU-M8hJ37TjI4GmiSbtNm1YYCoLIjvNmzxsFRI1Cokfd22gw/viewform?embedded=true" style="background-color: #1f2029;" width="640" height="700" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div> 
+  <div class="fcf-body" style="color: #fff;">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div> 
 </body>
 </html>
