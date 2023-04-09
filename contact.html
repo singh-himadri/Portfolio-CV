@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style media="screen">
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #1f2029;
+            font-family: sans-serif;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #111;
+            height: auto;
+            width: 100vw;
+
+            padding-top: 40px;
+            color: #fff;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+
+            border-radius: 50%;
+
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            width: 20px;
+
+
+            transition: color .4s ease;
+
+        }
+        .socials a:hover i{
+            color: aqua;
+        }
+
+        .footer-bottom{
+            background: #000;
+            width: 100vw;
+            padding: 20px;
+        padding-bottom: 40px;
+            text-align: center;
+        }
+        .footer-bottom p{
+        float: left;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom p a{
+        color:#44bae8;
+        font-size: 16px;
+        text-decoration: none;
+        }
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+
+
+        @media (max-width:500px) {
+        .footer-menu ul{
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+  <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  <label for="menu-icon"></label>
+  <nav class="nav"> 		
+    <ul class="pt-5">
+      <li><a href="index.html">Home</a></li>  
+      <li><a href="about.html">About me</a></li>
+      <li><a href="credential.html">Credentials</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <br/><br/><br/>
+    <footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/himadri-singh2256/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jai2256"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/ofpaintsandpalettes/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+  
+    </footer>
+  <br/>
+  <br/>
+  <div class="forms">
+  <div class="fcf-body" style="color: #fff;">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div> 
+
+</div>
+    </div>
+
+</body>
+</html>
